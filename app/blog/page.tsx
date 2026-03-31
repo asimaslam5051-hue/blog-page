@@ -10,7 +10,7 @@ export const blogs = [
     slug: "first-blog",
     date: "2023-10-01",
     author: "John Doe",
-    image: "/images/pexel4.PNG"
+    image: "/images/pexel1.jpg"
   },
   {
     title: "Second blog",
