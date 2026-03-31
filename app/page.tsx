@@ -14,11 +14,11 @@ export default function Home() {
             A <span className="font-semibold">free repository</span> for community{" "}
             <br className="hidden lg:block" />
             components using{" "}
-            <span className="font-semibold underline decoration-primary">Tailwind CSS</span>
+            <span className="font-semibold underline decoration-primary">HTML Css</span>
           </h1>
 
           <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
-            Open source Tailwind UI components and templates to{" "}
+            Open source HTML UI components and templates to{" "}
             <br className="hidden lg:block" />
             bootstrap your new apps, projects or landing sites!
           </p>
