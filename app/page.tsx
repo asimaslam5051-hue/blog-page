@@ -186,7 +186,7 @@ export default function Home() {
             </div>
              <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
                <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105">
-                <img src ="/images/pexel4.PNG" alt= "Blog 3" className="w-full h-64 object-cover rounded-t-lg"/>
+                <img src ="/images/pexel4.png" alt= "Blog 3" className="w-full h-64 object-cover rounded-t-lg"/>
                 <div className="mt-4">
                    <h3 className="text-xl mt-4 font-semibold text-gray-800 dark:text-gray-200">Blog Post title 3</h3>
                  <p className="text-gray-500 dark:text-gray300">A brief description of the blog post  goes here 
