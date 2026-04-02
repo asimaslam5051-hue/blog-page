@@ -17,7 +17,7 @@ The data type of the variable is decided at run-time in JavaScript, which is why
 # table of contents
 
 1.[javaScript tutorial](#javascript-tutorial)
-2.[javascript styntax] (#javascript-syntax)
+2.[javascript styntax](#javascript-syntax)
 3.[variables and Data types](#variables-and-data-types)
 4.[operator](#operator)
 5.[Control Structure](#Control-Structure)
@@ -43,6 +43,7 @@ The language was quickly integrated into Netscape Navigator, the leading browser
 
 JavaScript syntax refers to the rules and conventions dictating how code is structured and arranged within the JavaScript programming language. This includes statements, expressions, variables, functions, operators, and control flow constructs.
 
-```javascript
+```c javascript
 
 console.log("Hello,World!");
+```

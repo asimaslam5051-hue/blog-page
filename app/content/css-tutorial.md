@@ -21,6 +21,7 @@ Setting Up CSS
 To use CSS, you can either include it directly in your HTML file (inline or internal) or as an external stylesheet. Here’s how to set up CSS:
 
 ## Inline CSS
+```c
 <p style="color: blue;">This is a blue paragraph.</p>
 Internal CSS
 <!DOCTYPE html>
@@ -45,6 +46,7 @@ In styles.css:
 p {
     color: black;
 }
+```
 ## CSS Basics
 Now, let’s dive into the basics of CSS, including selectors, properties, and how to apply styles to HTML elements.
 
@@ -55,6 +57,7 @@ Selectors are used to target HTML elements and apply styles. Some common selecto
 Class Selector: Targets elements with a specific class (e.g., .example).
 ID Selector: Targets an element with a specific ID (e.g., #header).
 /* Element selector */
+```c
 p {
     color: green;
 }
@@ -68,9 +71,10 @@ p {
 #header {
     background-color: lightgray;
 }
-## Colors and Backgrounds
+```
+## Colors and Background
+```c
 CSS allows you to set text colors, background colors, and images.
-
 /* Text color */
 h1 {
     color: black;
@@ -85,7 +89,9 @@ body {
 div {
     background-image: url('background.jpg');
 }
+```
 ## Fonts and Text Styling
+```c
 Control the typography of your website using fonts, text alignment, and decoration properties.
 
 h1 {
@@ -94,18 +100,20 @@ h1 {
     text-align: center;
     text-decoration: underline;
 }
+```
 ## Intermediate CSS
 After mastering the basics, you can start exploring more intermediate CSS concepts such as box model, positioning, and layout techniques.
 
 ## Box Model
 The box model is fundamental to understanding how elements are sized and spaced in CSS. It consists of four components: content, padding, border, and margin.
-
+```c
 div {
     width: 200px;
     padding: 10px;
     border: 1px solid black;
     margin: 20px;
 }
+```
 ## Positioning
 CSS provides several ways to position elements on a page:
 
@@ -121,7 +129,7 @@ div {
 }
 ## Flexbox
 Flexbox is a powerful layout model that allows you to create flexible and responsive layouts.
-
+```c
 .container {
     display: flex;
     justify-content: space-between;
@@ -132,9 +140,10 @@ Flexbox is a powerful layout model that allows you to create flexible and respon
     flex: 1;
     margin: 10px;
 }
+```
 ## Grid
 CSS Grid Layout provides a two-dimensional layout system, making it easy to design complex web layouts.
-
+```c
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -145,12 +154,13 @@ CSS Grid Layout provides a two-dimensional layout system, making it easy to desi
     background-color: lightblue;
     padding: 20px;
 }
+```
 ## Advanced CSS
 Now that you’re comfortable with intermediate concepts, it’s time to explore advanced topics like CSS animations, transitions, and responsive design.
 
 ## CSS Animations
 CSS animations allow you to animate transitions between different styles.
-
+```c
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -163,6 +173,7 @@ CSS animations allow you to animate transitions between different styles.
 div {
     animation: fadeIn 2s ease-in-out;
 }
+```
 ## CSS Transitions
 Transitions allow you to smoothly change property values over a specified duration.
 
@@ -176,7 +187,7 @@ button:hover {
 }
 ## Media Queries
 Media queries enable responsive design by applying different styles based on the device's characteristics (e.g., screen width).
-
+```c
 /* For screens wider than 600px */
 @media (min-width: 600px) {
     body {
@@ -190,6 +201,7 @@ Media queries enable responsive design by applying different styles based on the
         background-color: lightpink;
     }
 }
+```
 ## Conclusion
 Congratulations on completing this CSS tutorial! You’ve learned the basics of CSS, intermediate layout techniques like Flexbox and Grid, and advanced topics like animations and responsive design. With CSS, you can create beautiful, responsive websites that look great on any device. Keep practicing and experimenting to further develop your CSS skills.
 

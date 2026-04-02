@@ -1,8 +1,25 @@
+"use client"
 import Image from "next/image";
 import Navbar from "@/components/ui/Navbar";
 import { Button } from "@/components/ui/button";
-
+import Typed from 'typed.js';
+import React, { useEffect, useRef } from 'react';
 export default function Home() {
+   // Create reference to store the DOM element containing the animation
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Coding','Web Development','Data science','Machine Learning', 'Software Engineering'],
+      typeSpeed: 50,
+    });
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+  <span ref={el} />
+
   return (
     <main>
        {/*  added */}
@@ -14,7 +31,7 @@ export default function Home() {
             A <span className="font-semibold">free repository</span> for community{" "}
             <br className="hidden lg:block" />
             components using{" "}
-            <span className="font-semibold underline decoration-primary">HTML Css</span>
+            <span className="font-semibold underline decoration-primary"><span ref={el} /></span>
           </h1>
 
           <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">

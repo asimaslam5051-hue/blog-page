@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Asim"
 image: "/images/pexel12.jpg"
 ---
-## Introduction to C
+
 C is a powerful general-purpose programming language that is widely used in system programming, embedded systems, and applications requiring high performance. It is known for its efficiency, close-to-hardware control, and portability, making it a crucial language in the software industry.
 
 ## Why Learn C?
@@ -29,6 +29,7 @@ Control Structures: Understand how to use conditional statements and loops.
 Functions: Learn how to write reusable code blocks.
 
 ## Variables and Data Types
+```c
 #include <stdio.h>
 
 int main() {
@@ -39,9 +40,12 @@ int main() {
     printf("Age: %d, Height: %.1f, Initial: %c\n", age, height, initial);
     return 0;
 }
-## Control Structures
-#include <stdio.h>
+```
 
+
+### Control Structures
+#include <stdio.h>
+```c
 int main() {
     int age = 20;
 
@@ -57,7 +61,9 @@ int main() {
 
     return 0;
 }
+```
 ## Functions
+```c
 #include <stdio.h>
 
 void greet(char name[]) {
@@ -68,6 +74,7 @@ int main() {
     greet("Alice");
     return 0;
 }
+```
 ## Intermediate C
 Once you are familiar with the basics, it's time to explore more advanced features of C:
 
@@ -75,6 +82,7 @@ Arrays and Pointers: Learn how to work with arrays and pointers, which are funda
 File I/O: Understand how to read from and write to files.
 Dynamic Memory Allocation: Explore memory management using malloc, calloc, and free.
 Arrays and Pointers
+```c
 #include <stdio.h>
 
 int main() {
@@ -87,7 +95,9 @@ int main() {
 
     return 0;
 }
+```
 ## File I/O
+```c
 #include <stdio.h>
 
 int main() {
@@ -102,7 +112,9 @@ int main() {
 
     return 0;
 }
+```
 ## Dynamic Memory Allocation
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -121,6 +133,7 @@ int main() {
 
     return 0;
 }
+```
 ## Advanced C
 Now that you are comfortable with intermediate topics, let’s move on to some advanced C programming concepts:
 
@@ -128,6 +141,7 @@ Structures: Learn how to group different data types together.
 Pointers to Functions: Explore how to use pointers with functions for flexibility.
 Memory Management: Delve deeper into memory management and optimization.
 Structures
+```c {1,3}
 #include <stdio.h>
 
 struct Student {
@@ -142,7 +156,9 @@ int main() {
     printf("Name: %s, Age: %d, Grade: %.2f\n", s1.name, s1.age, s1.grade);
     return 0;
 }
-Pointers to Functions
+```
+Pointers to 
+```c ShowLineNumber
 #include <stdio.h>
 
 void add(int a, int b) {
@@ -155,10 +171,11 @@ int main() {
 
     return 0;
 }
+```
 Memory Management
+```c
 #include <stdio.h>
 #include <stdlib.h>
-
 int main() {
     int *arr;
     int size = 10;
@@ -179,6 +196,7 @@ int main() {
 
     return 0;
 }
+```
 ## Conclusion
 Congratulations on making it through this C programming tutorial! You’ve covered everything from the basics of C to advanced topics like structures and memory management. Keep practicing and exploring the vast capabilities of C to enhance your programming skills.
 

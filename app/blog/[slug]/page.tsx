@@ -9,7 +9,8 @@ import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import {unified} from 'unified'
 import path from "path";
-
+import rehypePrettyCode from "rehype-pretty-code";
+import { transformerCopyButton } from '@rehype-pretty/transformers'
 //export const blogs = [
   //{
     //title: "First blog",
@@ -86,20 +87,30 @@ import path from "path";
   const fileContent = fs.readFileSync(filePath, "utf8");
   const { content, data } = matter(fileContent);
 
-  const processer = await unified()
+  const processor =  unified()
   .use(remarkParse)
   .use(remarkRehype)
-  .use(rehypeDocument, {title: '👋🌍'})
+  .use(rehypePrettyCode, {
+    theme: "github-dark",
+    transformers: [
+      transformerCopyButton({
+        visibility: "always",
+        feedbackDuration: 3000,
+      }),
+    ],
+  })
   .use(rehypeFormat)
   .use(rehypeStringify)
   
+  const htmlcontent = (await  processor.process(content)).toString()
   
-  const htmlcontent = (await processer.process(content)).toString()
- 
+ if (!fs.existsSync(filePath)) {
+  return notFound();
+}
 
   return (
     <div className="mx-auto max-w-5xl p-4">
-      <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
+      <h1 className="text-4xl font-bold mb-4">{data.title}</h1>
 
       <p className="text-lg mb-4 border-l-4 pl-4 border-gray-500 italic">
         "{data.description}"

@@ -1,7 +1,10 @@
-"useclient"
-import React from "react";
+"use client"
+import React from 'react';
+import { useState,useEffect } from 'react';
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
+import LoadingBar from "react-top-loading-bar";
+import {  usePathname } from "next/navigation";
 import {
   Sheet,
  
@@ -12,9 +15,40 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { ModeToggle } from "./components/theme-button";
+
 const Navbar = () => {
+    const[progress,setProgress] = useState(0)
+    const Pathname=usePathname()
+    useEffect(()=>{
+        setProgress(30)
+
+        setTimeout(()=>{
+            setProgress(70)
+        },100);
+
+         setTimeout(()=>{
+            setProgress(100)
+        },400);
+       
+    },  [Pathname])
+
+    useEffect(()=>{
+        setProgress(30)
+
+        setTimeout(()=>{
+            setProgress(0)
+        },500);
+
+        
+    },  [Pathname])
+
     return(
        <nav className="bg-background/50 p-4 sticky top-0 backdrop-blur border-b z-10">
+          <LoadingBar
+             color='#933ce6'
+             progress={progress}
+             onLoaderFinished={()=>setProgress(0)}
+          />
         <div className="container mx-auto flex justify-between items-center">
             <Link href={"/"}><div className="text-lg font-bold">
                 AsimBlog

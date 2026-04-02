@@ -29,6 +29,7 @@ Now that your environment is set up, let’s start with the basics. In this sect
 Control Structures: Understand how to use conditional statements and loops.
 Functions: Learn how to create reusable code blocks with functions.
 Variables and Data Types
+```c
 #include <iostream>
 
 int main() {
@@ -39,7 +40,9 @@ int main() {
     std::cout << "Age: " << age << ", Height: " << height << ", Initial: " << initial << std::endl;
     return 0;
 }
+```
 ## Control Structures
+```c
 #include <iostream>
 
 int main() {
@@ -57,7 +60,9 @@ int main() {
 
     return 0;
 }
+```
 ## Functions
+```c
 #include <iostream>
 
 void greet(std::string name) {
@@ -68,6 +73,7 @@ int main() {
     greet("Alice");
     return 0;
 }
+```
 ## Intermediate C++
 After mastering the basics, it’s time to explore more advanced features of C++:
 
@@ -75,6 +81,7 @@ Classes and Objects: Learn how to use object-oriented programming in C++.
 Pointers and References: Understand the power of pointers and references for memory management and performance optimization.
 Standard Template Library (STL): Discover C++’s rich standard library, including vectors, sets, and maps.
 Classes and Objects
+```c
 #include <iostream>
 
 class Dog {
@@ -95,7 +102,9 @@ int main() {
 
     return 0;
 }
+```
 ## Pointers and References
+```c
 #include <iostream>
 
 int main() {
@@ -108,7 +117,9 @@ int main() {
 
     return 0;
 }
+```
 Standard Template Library (STL)
+```c
 #include <iostream>
 #include <vector>
 
@@ -122,6 +133,7 @@ int main() {
     std::cout << std::endl;
     return 0;
 }
+```
 ## Advanced C++
 Once you’re comfortable with intermediate topics, it’s time to dive into more advanced concepts:
 
@@ -129,6 +141,7 @@ Inheritance and Polymorphism: Learn how to use inheritance to extend classes and
 Operator Overloading: Understand how to redefine operators for custom objects.
 Exception Handling: Learn how to handle errors and exceptions in C++.
 Inheritance and Polymorphism
+```c
 #include <iostream>
 
 class Animal {
@@ -152,7 +165,9 @@ int main() {
     delete animal;
     return 0;
 }
+```
 ## Operator Overloading
+```c
 #include <iostream>
 
 class Complex {
@@ -177,7 +192,9 @@ int main() {
     c3.display();
     return 0;
 }
+```
 ## Exception Handling
+```c
 #include <iostream>
 
 int main() {
@@ -192,6 +209,7 @@ int main() {
 
     return 0;
 }
+```
 ## Conclusion
 Congratulations on completing this C++ tutorial! You’ve learned everything from the basics to advanced topics like inheritance and operator overloading. C++ is a powerful language, and with continued practice, you can build high-performance applications.
 
