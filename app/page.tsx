@@ -18,7 +18,7 @@ export default function Home() {
       typed.destroy();
     };
   }, []);
-  <span ref={el} />
+  
 
   return (
     <main>
@@ -172,7 +172,7 @@ export default function Home() {
                 <img src ="/images/pexel1.jpg" alt= "Blog 1" className="w-full h-64 object-cover rounded-t-lg"/>
                 <div className="mt-4">
                   <h3 className="text-xl mt-4 font-semibold text-gray-800 dark:text-gray-200">Blog Post title 1</h3>
-                 <p className="text-gray-500 dark:text-gray300">A brief description of the blog post  goes here 
+                 <p className="text-gray-500 dark:text-gray-200">A brief description of the blog post  goes here 
                   should me engagging and informative.</p>
                   <a href ="/blog-post-1">
                   <Button className="m-2" variant="outline">
@@ -189,7 +189,7 @@ export default function Home() {
                 <img src ="/images/pexel2.jpg" alt= "Blog 2" className="w-full h-64 object-cover rounded-t-lg"/>
                 <div className="mt-4">
                   <h3 className="text-xl mt-4 font-semibold text-gray-800 dark:text-gray-200">Blog Post title 2</h3>
-                 <p className="text-gray-500 dark:text-gray300">A brief description of the blog post  goes here 
+                 <p className="text-gray-500 dark:text-gray-200">A brief description of the blog post  goes here 
                   should me engagging and informative.</p>
                   <a href = "/blog-post-2">
                   <Button className="m-2" variant="outline">
@@ -206,7 +206,7 @@ export default function Home() {
                 <img src ="/images/pexel4.png" alt= "Blog 3" className="w-full h-64 object-cover rounded-t-lg"/>
                 <div className="mt-4">
                    <h3 className="text-xl mt-4 font-semibold text-gray-800 dark:text-gray-200">Blog Post title 3</h3>
-                 <p className="text-gray-500 dark:text-gray300">A brief description of the blog post  goes here 
+                 <p className="text-gray-500 dark:text-gray-200">A brief description of the blog post  goes here 
                   should me engagging and informative.</p>
                   <a href="/blog-post-3">
                   <Button className="m-2" variant="outline">
